@@ -65,11 +65,11 @@ class KnowledgeRetriever:
         if category_filter:
             queryset = queryset.filter(category__in=category_filter)
 
-        # Order by similarity using pgvector L2 distance
+        # Annotate with distance and order by similarity using pgvector L2 distance
         # Note: Lower L2 distance = higher similarity
-        results = queryset.order_by(
-            L2Distance('embedding', query_embedding)
-        )[:top_k]
+        results = queryset.annotate(
+            distance=L2Distance('embedding', query_embedding)
+        ).order_by('distance')[:top_k]
 
         # Format results
         formatted_results = []
@@ -77,8 +77,7 @@ class KnowledgeRetriever:
             # Calculate similarity score (convert L2 distance to similarity)
             # For display purposes, we'll use a simple transformation
             # Note: This is a rough approximation, actual similarity can vary
-            distance = L2Distance('embedding', query_embedding)
-            similarity_score = 1.0 / (1.0 + float(str(distance)))  # Rough approximation
+            similarity_score = 1.0 / (1.0 + item.distance)  # Use annotated distance value
 
             formatted_results.append({
                 'id': str(item.id),
