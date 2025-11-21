@@ -144,12 +144,17 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # CORS Configuration
 CORS_ALLOW_ALL_ORIGINS = DEBUG  # Only allow all origins in development
+
+# Get production origins from environment variable
+CORS_ORIGINS_ENV = os.getenv("CORS_ALLOWED_ORIGINS", "")
+PRODUCTION_ORIGINS = [origin.strip() for origin in CORS_ORIGINS_ENV.split(",") if origin.strip()]
+
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://localhost:3001",
     "http://127.0.0.1:3000",
     "http://127.0.0.1:3001",
-]
+] + PRODUCTION_ORIGINS
 
 # REST Framework Configuration
 REST_FRAMEWORK = {
