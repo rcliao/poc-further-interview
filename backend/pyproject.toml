@@ -1,0 +1,48 @@
+[project]
+name = "acme-sales-agent"
+version = "0.1.0"
+description = "AI Sales Agent for ACME Senior Living - Multi-agent system with enrichment and observability"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    # Django & REST Framework
+    "django>=5.0,<6.0",
+    "djangorestframework>=3.14.0",
+    "django-cors-headers>=4.3.0",
+
+    # Database
+    "psycopg2-binary>=2.9.9",
+    "pgvector>=0.2.4",
+
+    # LangChain & LangGraph
+    "langchain>=0.1.0",
+    "langchain-openai>=0.0.2",
+    "langgraph>=0.0.20",
+
+    # LangFuse
+    "langfuse>=2.0.0",
+
+    # OpenAI
+    "openai>=1.0.0",
+
+    # Environment & Configuration
+    "python-dotenv>=1.0.0",
+
+    # Utilities
+    "pydantic>=2.5.0",
+    "python-dateutil>=2.8.2",
+
+    # Production server
+    "gunicorn>=21.2.0",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=7.4.0",
+    "pytest-django>=4.7.0",
+    "black>=23.12.0",
+    "ruff>=0.1.0",
+]
+
+# Django project - no package to build
+package = false
