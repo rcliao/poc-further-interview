@@ -1,0 +1,273 @@
+[
+  {
+    "category": "pricing",
+    "content": "Independent Living starts from $2000 a month. Assisted Living starts from $3000 a month. The community entrance fee is $3500.",
+    "metadata": {
+      "independent_living_base": 2000,
+      "assisted_living_base": 3000,
+      "entrance_fee": 3500,
+      "currency": "USD",
+      "frequency": "monthly"
+    }
+  },
+  {
+    "category": "pricing",
+    "content": "Included in the monthly cost is Basic Cable, Internet/WiFi, Linen Service, Breakfast, Lunch, Dinner, Housekeeping.",
+    "metadata": {
+      "included_services": ["Basic Cable", "Internet/WiFi", "Linen Service", "Breakfast", "Lunch", "Dinner", "Housekeeping"]
+    }
+  },
+  {
+    "category": "amenities",
+    "content": "Amenities include: Elevators, Party space, Exercise pool, Chef-prepared meals with seasonal ingredients, Outdoor seating, Housekeeping services, Beauty salon/services, Gym",
+    "metadata": {
+      "amenities": ["Elevators", "Party space", "Exercise pool", "Chef-prepared meals", "Outdoor seating", "Housekeeping services", "Beauty salon", "Gym"]
+    }
+  },
+  {
+    "category": "services",
+    "content": "Services provided: 24-hour staffing, Bathing assistance, Errand assistance, Medication management, Shopping assistance, Dressing assistance, Eating assistance",
+    "metadata": {
+      "services": ["24-hour staffing", "Bathing assistance", "Errand assistance", "Medication management", "Shopping assistance", "Dressing assistance", "Eating assistance"]
+    }
+  },
+  {
+    "category": "services",
+    "content": "Cleaning services: Housekeeping, Linen services",
+    "metadata": {
+      "cleaning_services": ["Housekeeping", "Linen services"]
+    }
+  },
+  {
+    "category": "activities",
+    "content": "Activities offered: Arts and crafts, Book clubs, Card playing, Cooking classes, Exercise programs, Game nights, Movie nights, Yoga",
+    "metadata": {
+      "activities": ["Arts and crafts", "Book clubs", "Card playing", "Cooking classes", "Exercise programs", "Game nights", "Movie nights", "Yoga"]
+    }
+  },
+  {
+    "category": "dietary",
+    "content": "Dietary options available: Diabetic options, Low sugar/salt, Vegetarian, Gluten-free. Note: No information available about Kosher meal preparation.",
+    "metadata": {
+      "dietary_options": ["Diabetic", "Low sugar", "Low salt", "Vegetarian", "Gluten-free"],
+      "not_available": ["Kosher"]
+    }
+  },
+  {
+    "category": "room_amenities",
+    "content": "Room amenities: Air conditioning, Microwaves, Private kitchenette, Walk-in shower, Furnished Rooms",
+    "metadata": {
+      "room_features": ["Air conditioning", "Microwaves", "Private kitchenette", "Walk-in shower", "Furnished Rooms"]
+    }
+  },
+  {
+    "category": "services",
+    "content": "Religious services: Devotional areas available",
+    "metadata": {
+      "religious_services": ["Devotional areas"]
+    }
+  },
+  {
+    "category": "amenities",
+    "content": "Dining areas: Dining room, In-room dining, Restaurant-style meal service",
+    "metadata": {
+      "dining_options": ["Dining room", "In-room dining", "Restaurant-style meal service"]
+    }
+  },
+  {
+    "category": "activities",
+    "content": "Outdoor activities: Accompanied walks, Park visits, Walking trails, Day trips",
+    "metadata": {
+      "outdoor_activities": ["Accompanied walks", "Park visits", "Walking trails", "Day trips"]
+    }
+  },
+  {
+    "category": "amenities",
+    "content": "Outdoor areas: Courtyard, Garden, Outdoor areas suitable for walking",
+    "metadata": {
+      "outdoor_spaces": ["Courtyard", "Garden", "Walking areas"]
+    }
+  },
+  {
+    "category": "amenities",
+    "content": "Fitness & exercise options: Gym or fitness room, Exercise pool, Yoga",
+    "metadata": {
+      "fitness_options": ["Gym", "Exercise pool", "Yoga"]
+    }
+  },
+  {
+    "category": "financing",
+    "content": "The community does not accept long term care insurance. The community participates in HUD and Medicaid programs. Veterans may be eligible for Veterans benefits. Bridge loans are available for homeowners.",
+    "metadata": {
+      "accepted": ["HUD", "Medicaid", "Veterans benefits", "Bridge loans"],
+      "not_accepted": ["Long term care insurance"]
+    }
+  },
+  {
+    "category": "contact",
+    "content": "ACME Senior Living contact information: Phone: 850-445-8362, Address: 145 Fake Street, Charlotte, NC, 28203",
+    "metadata": {
+      "community_name": "ACME Senior Living",
+      "phone": "850-445-8362",
+      "street": "145 Fake Street",
+      "city": "Charlotte",
+      "state": "NC",
+      "zip": "28203"
+    }
+  },
+  {
+    "category": "policies",
+    "content": "Smoking policy: Outdoor smoking areas only",
+    "metadata": {
+      "smoking_allowed": true,
+      "smoking_location": "outdoor areas only"
+    }
+  },
+  {
+    "category": "care_types",
+    "content": "Care types offered: Independent Living, Assisted Living. We always have availability for all room types.",
+    "metadata": {
+      "care_levels": ["Independent Living", "Assisted Living"],
+      "availability": "always available"
+    }
+  },
+  {
+    "category": "room_types",
+    "content": "Room types available: 1 Bedroom / 1 Bath, 2 Bedroom / 1.5 Bath, Studios",
+    "metadata": {
+      "room_types": ["1BR/1BA", "2BR/1.5BA", "Studio"]
+    }
+  },
+  {
+    "category": "policies",
+    "content": "Visiting hours: Guests at mealtimes, Flexible visiting hours, On-site parking for guests",
+    "metadata": {
+      "visiting_policy": ["Guests at mealtimes", "Flexible hours", "Guest parking"]
+    }
+  },
+  {
+    "category": "policies",
+    "content": "Security measures: Staff background checks",
+    "metadata": {
+      "security": ["Staff background checks"]
+    }
+  },
+  {
+    "category": "policies",
+    "content": "Adult day care is not provided",
+    "metadata": {
+      "adult_day_care": false
+    }
+  },
+  {
+    "category": "contact",
+    "content": "Community capacity: 60 residents total",
+    "metadata": {
+      "max_residents": 60
+    }
+  },
+  {
+    "category": "policies",
+    "content": "Gender policy: Men and women are not separated. Couples are allowed to live together.",
+    "metadata": {
+      "gender_separated": false,
+      "couples_allowed": true
+    }
+  },
+  {
+    "category": "policies",
+    "content": "Minimum age requirement: 60 years",
+    "metadata": {
+      "minimum_age": 60
+    }
+  },
+  {
+    "category": "services",
+    "content": "Hospice is not provided. Respite care is provided.",
+    "metadata": {
+      "hospice": false,
+      "respite_care": true
+    }
+  },
+  {
+    "category": "services",
+    "content": "Physical therapy is available through an onsite third-party provider. No information about speech therapy.",
+    "metadata": {
+      "physical_therapy": true,
+      "physical_therapy_type": "third party onsite",
+      "speech_therapy": "unknown"
+    }
+  },
+  {
+    "category": "services",
+    "content": "Transportation services: Scheduled local transportation, Transportation to medical appointments",
+    "metadata": {
+      "transportation": ["Scheduled local", "Medical appointments"]
+    }
+  },
+  {
+    "category": "contact",
+    "content": "Languages spoken: English and Spanish",
+    "metadata": {
+      "languages": ["English", "Spanish"]
+    }
+  },
+  {
+    "category": "policies",
+    "content": "Lease term: 12 months",
+    "metadata": {
+      "lease_term_months": 12
+    }
+  },
+  {
+    "category": "policies",
+    "content": "Parking is available for residents. Residents are allowed to have cars.",
+    "metadata": {
+      "parking": true,
+      "cars_allowed": true
+    }
+  },
+  {
+    "category": "policies",
+    "content": "Pets are allowed: Cats allowed, Small dogs allowed (under 25 lbs.), Service animals allowed, Fishes, Small birds",
+    "metadata": {
+      "pets_allowed": true,
+      "allowed_pets": ["Cats", "Small dogs under 25 lbs", "Service animals", "Fish", "Small birds"],
+      "dog_weight_limit_lbs": 25
+    }
+  },
+  {
+    "category": "services",
+    "content": "Skilled nursing is offered. Private aides are allowed in the community.",
+    "metadata": {
+      "skilled_nursing": true,
+      "private_aides_allowed": true
+    }
+  },
+  {
+    "category": "accessibility",
+    "content": "The community is vision impaired friendly and fully wheelchair accessible.",
+    "metadata": {
+      "vision_impaired_friendly": true,
+      "wheelchair_accessible": true
+    }
+  },
+  {
+    "category": "contact",
+    "content": "For careers and employment opportunities, visit: https://www.talkfurther.com/events-demo",
+    "metadata": {
+      "careers_url": "https://www.talkfurther.com/events-demo"
+    }
+  },
+  {
+    "category": "tour",
+    "content": "Tour availability: Monday through Friday, 9am to 6pm",
+    "metadata": {
+      "tour_days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "tour_hours_start": "09:00",
+      "tour_hours_end": "18:00",
+      "current_date": "2025-03-04",
+      "current_time": "05:40"
+    }
+  }
+]
