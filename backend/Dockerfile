@@ -13,10 +13,9 @@ RUN pip install uv
 
 # Copy project files
 COPY pyproject.toml ./
-COPY uv.lock ./
 
-# Install Python dependencies
-RUN uv sync --frozen
+# Install Python dependencies system-wide (no virtual env needed in Docker)
+RUN uv pip install --system -r pyproject.toml
 
 # Copy application code
 COPY . .
@@ -24,5 +23,5 @@ COPY . .
 # Expose port
 EXPOSE 8000
 
-# Run Django development server
-CMD ["uv", "run", "python", "manage.py", "runserver", "0.0.0.0:8000"]
+# Run migrations, seed knowledge, and start gunicorn
+CMD sh -c "python manage.py migrate && python manage.py seed_knowledge && gunicorn config.wsgi:application --bind 0.0.0.0:8000 --workers 2"
